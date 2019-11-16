@@ -1,13 +1,20 @@
 
 def multiple_choice():
     multiple_choice_1 = print("1.What is the a rough estimate of the population of New York City? Please enter a character between a-e.")
-    answer_options = input(" a) 1 million\n b) 3 million\n c) 5 million\n d) 8 million\n e)10 million")
-    multiple_choice_answer_1 = "d"
-    if answer_options.lower() == multiple_choice_answer_1:
+    answer_options_1 = input(" a) 1 million\n b) 3 million\n c) 5 million\n d) 8 million\n e)10 million")
+    correct_answer_1 = "d"
+    if answer_options_1.lower() == correct_answer_1:
         print ("Correct!")
-    elif answer_options.lower() != multiple_choice_answer_1:
+    elif answer_options_1.lower() != correct_answer_1:
         print("Incorrect, the answer is 'd) 8 million!'")
 
+    multiple_choice_2 = print("\n2.Who taught History of Mafic? Please enter a letter base on option.")
+    answer_options_2 = input(" a) Professor\n b)Professor Lupin\n c) Professor McGonagall\n d) Professor Binns\n e) Professor Flitwick")
+    correct_answer_2 = "d"
+    if answer_options_2.lower() == correct_answer_2:
+        print ("Correct!")
+    elif answer_options_2.lower() != correct_answer_2:
+        print("Incorrect, the answer is 'd) Professor McGonagall!'")
     
 
 def numeric_response():
