@@ -63,7 +63,14 @@ def quiz_questions():
     elif Boolean_2 != Boolean_answer_2:
         print("Incorrect! The answer if True, Thestrals can only be seen by people who have witnessed death.")
         
-    print(f"Each question worth 1 point, this is your score {score}")
+    print(f"Each question worth 1 point, this is your score '{score}")
+
+    if score <= 3:
+        print("You didn't do well")
+    elif score == 5:
+        print("You meet the passing line")
+    elif score == 6:
+        print("you are a genius")
 #def numeric_response():
 #def True_False_question():
 
