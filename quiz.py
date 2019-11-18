@@ -110,7 +110,8 @@ answers = ["rough estimate of the population of New York City is 8 million",
            "Professor Binns taught history of Mafic",
            "There are 50 states in the United States",
            'False, Hawaii was the last state to enter the union',
-           "True"]
+           "True",
+           "False"]
 
 def quiz():
     score = 0
