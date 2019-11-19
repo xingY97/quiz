@@ -22,6 +22,7 @@ correct_choices = ["d","8 million",
 answers = ["rough estimate of the population of New York City is 8 million",
            "Professor Binns taught history of Mafic",
            "There are 50 states in the United States",
+           "Voldemort was 16 when he opened the chanber of secrets"
            'False, Hawaii was the last state to enter the union',
            "The answer is True",
            "The answer is False"]
@@ -41,9 +42,11 @@ def quiz():
         else:
             print("Incorrect", answer)      
             index = questions.index(question) +1
-            check_answers.append(f" {index} Incorrect")  
+            check_answers.append(f" {index} Incorrect") 
+             
     print("     Correctly answered",score, "out of", len(questions), "that is", round(score / len(questions),2) * 100, "%")
     print(check_answers)
+
     if score <= 3:
         print("You didn't do well")
     elif score == 5:
